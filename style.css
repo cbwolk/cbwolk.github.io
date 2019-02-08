@@ -53,6 +53,7 @@ body{
 img {
     width: 40%;
     height: 40%;
+    display: inline-block;
     vertical-align: middle;
     border-radius: 50%;
 }
@@ -69,6 +70,7 @@ img {
 	background: white;
 	padding: 20px;
 	clear: both;
+    display: inline-block;
     text-align: middle;
     overflow: auto;
 }
