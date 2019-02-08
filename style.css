@@ -10,14 +10,21 @@ h1, h2, h3, h4{
 }
 h1{ font-size: 250%; }
 h2{ font-size: 1.5em; }
+#p1{ font-size: 1.2em; }
 
 a{
+	color: black;
+    font-weight: bold;
+	text-decoration: underline;
+}
+
+#nameLink{
 	color: black;
     font-weight: bold;
 	text-decoration: none;
 }
 	a:hover,
-	a:active{ text-decoration: underline; }
+	a:active{ text-decoration: overline; }
 
 body{
     font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
@@ -31,13 +38,14 @@ body{
 }
 
 
-.logo { 
+.name { 
     	
 	font-family: georgia;
     overflow: hidden;
     display: flex;
     justify-content: center;
     white-space: nowrap;
+    text-align: center;
     margin: 0 auto;
     letter-spacing: .15em;
     animation: 
@@ -58,37 +66,50 @@ img {
     border-radius: 50%;
 }
 
+
+/*
 .imageAndButtons {
     display: inline-block;
     align-content: center;
     text-align: center;
 }
+*/
+
 
 .mainContent{
-    
+    align-content: center;
+    text-align: center;
 	margin-top: 1%;
 	background: white;
 	padding: 20px;
 	clear: both;
-    display: inline-block;
-    text-align: middle;
+    display: block;
     overflow: auto;
 }
-    .mainContent p1 {
+    .mainContent #p1 {
+        display: inline-block;
         text-decoration:none;
         background-color: lightsteelblue;
         border-radius:5px;
         color:#fff;
         padding:10px 10px 10px 10px;
-        margin-right: 4%;
     }
-    .mainContent p3 {
 
-        text-decoration:none;
-        background-color: lightsteelblue;
+    a {
+        display: inline-block;
+        text-decoration:underline;
+        background-color: white;
         border-radius:5px;
-        color:#fff;
         margin-left: 4%;
+        padding:10px 10px 10px 10px;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration:underline;
+        background-color: #eee;
+        border-radius:5px;
+        margin-right: 4%;
         padding:10px 10px 10px 10px;
     }
 
