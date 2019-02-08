@@ -1,7 +1,6 @@
 /* A style sheet */
 /* Separation of concerns */
 
-
 p{ line-height: 2em; }
 h1, h2, h3, h4{
     color: black;
@@ -9,12 +8,12 @@ h1, h2, h3, h4{
 	line-height: 1.1em;
 	margin: 0 0 .5em 0;
 }
-h1{ 
-    font-size: 250%; 
-}
+h1{ font-size: 250%; }
 h2{ font-size: 1.5em; }
+
 a{
 	color: black;
+    font-weight: bold;
 	text-decoration: none;
 }
 	a:hover,
@@ -23,8 +22,8 @@ a{
 body{
     font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
     font-weight: normal;
-    
 }
+
 #page{ 
     margin-right: 3%;
     margin-left: 3%;
@@ -38,7 +37,6 @@ body{
     overflow: hidden;
     display: flex;
     justify-content: center;
-    text-align: center;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
@@ -55,14 +53,15 @@ body{
 img {
     width: 40%;
     height: 40%;
-    margin: 0 auto;
-    display: block;
-
-    left: 50%;
     vertical-align: middle;
     border-radius: 50%;
 }
 
+#imageAndButtons {
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
 
 #mainContent{
     
@@ -73,16 +72,26 @@ img {
     text-align: middle;
     overflow: auto;
 }
-    #mainContent p2 {
-        display: inline-block;
-        float: right;
-        text-align: middle;
-        vertical-align: middle;
+    #mainContent p1 {
+        text-decoration:none;
+        background-color: lightsteelblue;
+        border-radius:5px;
+        color:#fff;
+        padding:10px 10px 10px 10px;
+        margin-right: 4%;
+    }
+    #mainContent p3 {
+
+        text-decoration:none;
+        background-color: lightsteelblue;
+        border-radius:5px;
+        color:#fff;
+        margin-left: 4%;
+        padding:10px 10px 10px 10px;
     }
 
 #footer{
 	border-bottom: 1px #ccc solid;
-
 }
 	#footer p{
 		text-align: right;
